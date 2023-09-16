@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Weather App is an engaging and informative web application that provides real-time weather updates for locations around the world. It offers a visually appealing experience with dynamic background images and icons that change according to the weather conditions. This project was developed by [Your Name] and the [Your Team Name] team as part of a coding project.
+The Weather App is an engaging and informative web application that provides real-time weather updates for locations around the world. It offers a visually appealing experience with dynamic background images and icons that change according to the weather conditions. This project was developed by **Ev Fitzgerald Dixon, Jennifer Saffell, Josh Peterson, and Yoro Diakite** as part of a Nucamp JavaScript Fundamentals portfolio project.
 
 ## Features
 
@@ -34,6 +34,7 @@ Before you begin, ensure you have met the following requirements:
 ### Installation
 
 1. Clone this GitHub repository to your local machine:
+   
 
    ```shell
    git clone https://github.com/joshuadanpeterson/weather-app.git
