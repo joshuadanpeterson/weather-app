@@ -71,7 +71,13 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact us at [your-email@example.com](mailto:your-email@example.com).
+Contact
+If you have any questions or suggestions, feel free to contact us on Discord:
+
+[@Yoro Diakite](https://discordapp.com/users/1028176732584415253)
+[@Ev Fitzgerald Dixon](https://discordapp.com/users/897744571663011841)
+[@Josh Peterson](https://discordapp.com/users/350498460446752779)
+[@Jennifer Saffell](https://discordapp.com/users/1126942283598671912)
 
 ## Acknowledgments
 
