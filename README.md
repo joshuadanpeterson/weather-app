@@ -81,8 +81,47 @@ If you have any questions or suggestions, feel free to contact us on Discord:
 
 ## Acknowledgments
 
-- Special thanks to [OpenWeather](https://openweathermap.org/api) for providing weather data.
+- Special thanks to [OpenWeather](https://openweathermap.org/api) for providing weather data and [Google Cloud API](https://console.cloud.google.com/) for providing geocoding and time zone data.
 - Icons and images used in this project are sourced:
   - [Weather Icons](https://erikflowers.github.io/weather-icons/): for weather icons
   - [Pixabay](https://pixabay.com/images/search/weather/): for background images
+
+
+
+## API Setup
+
+### OpenWeather API
+
+1. Visit [OpenWeather](https://openweathermap.org/api) and sign up for an API key.
+2. After obtaining the API key, add it to your `.env` file (create one if it doesn't exist).
+
+    ```env
+    OPENWEATHER_API_KEY=your_openweather_api_key_here
+    ```
+
+### Google Cloud APIs
+
+1. Visit [Google Cloud Console](https://console.cloud.google.com/) and enable the Geocoding API and Time Zone API for your project.
+2. Obtain an API key and add it to your `.env` file.
+
+    ```env
+    GOOGLE_API_KEY=your_google_api_key_here
+    ```
+
+## Environment Setup
+
+1. Create a `.env` file in the `tests` directory.
+2. Add your API keys to the `.env` file as shown above.
+
+## Dependency Installation
+
+1. Open a terminal and navigate to the `tests` directory.
+2. Run `npm install` to install the required Node.js packages.
+
+## Running the Node.js Test
+
+1. Open a terminal and navigate to the `tests` directory.
+2. Run `npm start` to execute the `test.js` script.
+
+> Note: The `test.js` script will be renamed to `main.js` in future versions.
 
