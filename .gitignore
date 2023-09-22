@@ -1,0 +1,11 @@
+# .gitignore
+node_modules/
+
+# Environment variables
+.env
+
+# Other generated files
+.DS_Store
+
+# Notes files
+notes.txt
