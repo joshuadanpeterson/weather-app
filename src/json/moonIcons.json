@@ -1,0 +1,115 @@
+[
+    {
+      "icon": "wi-moon-waxing-crescent-1",
+      "phase": "Waxing Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-crescent-2",
+      "phase": "Waxing Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-crescent-3",
+      "phase": "Waxing Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-crescent-4",
+      "phase": "Waxing Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-crescent-5",
+      "phase": "Waxing Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-crescent-6",
+      "phase": "Waxing Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-first-quarter",
+      "phase": "First Quarter Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-gibbous-1",
+      "phase": "Waxing Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-gibbous-2",
+      "phase": "Waxing Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-gibbous-3",
+      "phase": "Waxing Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-gibbous-4",
+      "phase": "Waxing Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-gibbous-5",
+      "phase": "Waxing Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waxing-gibbous-6",
+      "phase": "Waxing Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-full",
+      "phase": "Full Moon"
+    },
+    {
+      "icon": "wi-moon-waning-gibbous-1",
+      "phase": "Waning Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waning-gibbous-2",
+      "phase": "Waning Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waning-gibbous-3",
+      "phase": "Waning Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waning-gibbous-4",
+      "phase": "Waning Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waning-gibbous-5",
+      "phase": "Waning Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-waning-gibbous-6",
+      "phase": "Waning Gibbous Moon"
+    },
+    {
+      "icon": "wi-moon-third-quarter",
+      "phase": "Third Quarter Moon"
+    },
+    {
+      "icon": "wi-moon-waning-crescent-1",
+      "phase": "Waning Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waning-crescent-2",
+      "phase": "Waning Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waning-crescent-3",
+      "phase": "Waning Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waning-crescent-4",
+      "phase": "Waning Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waning-crescent-5",
+      "phase": "Waning Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-waning-crescent-6",
+      "phase": "Waning Crescent Moon"
+    },
+    {
+      "icon": "wi-moon-new",
+      "phase": "New Moon"
+    } 
+]
+  
