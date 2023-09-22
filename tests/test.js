@@ -84,6 +84,7 @@ async function getWeatherData(latitude, longitude, units, cityCountry, targetTim
     if (data.cod === 200) {
       const temperature = data.main.temp;
       const cityName = data.name;
+      const weatherDescription = data.weather[0].description;  // Extract the weather description
       const sunriseTimeUTC = new Date(data.sys.sunrise * 1000);
       const sunsetTimeUTC = new Date(data.sys.sunset * 1000);
 
@@ -123,6 +124,7 @@ async function getWeatherData(latitude, longitude, units, cityCountry, targetTim
       console.log(`Date: ${new Date().toLocaleDateString()}`);
       console.log(`Local Time: ${currentLocalTime}`);
       console.log(`Temperature: ${temperature}°${units === 'imperial' ? 'F' : 'C'}`);
+      console.log(`Weather Description: ${weatherDescription.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}`);      
       console.log(`Sunrise (${cityName} Time): ${localSunriseTime}`);
       console.log(`Sunset (${cityName}): ${localSunsetTime}`);
       console.log(`Moon Phase: ${phase} | ${phaseEmoji}`);
