@@ -20,7 +20,6 @@ The Weather App is an engaging and informative web application that provides rea
 
 - **Optional Features:**
   - **Site Introduction:** Upon the first launch of the site, users are greeted with the site's name, logo, and engaging animations, providing an enjoyable user experience.
-  - **Moon Phases API:** The app leverages the OpenWeather API to incorporate accurate moon phase information, adding an extra layer of detail for enthusiasts.
 
 ## Getting Started
 
@@ -123,5 +122,4 @@ If you have any questions or suggestions, feel free to contact us on Discord:
 1. Open a terminal and navigate to the `tests` directory.
 2. Run `npm start` to execute the `test.js` script.
 
-> Note: The `test.js` script will be renamed to `main.js` in future versions.
-
+> Note: The `test.js` script is for testing purposes. It's meant to test the various APIs from OpenWeather and Google.
