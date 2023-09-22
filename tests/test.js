@@ -1,6 +1,8 @@
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
-import readline from 'readline'; // Import readline
+import readline from 'readline';
+import { Moon } from "lunarphase-js";
+
 
 dotenv.config(); // Load environment variables from .env file
 
@@ -111,6 +113,10 @@ async function getWeatherData(latitude, longitude, units, cityCountry, targetTim
         second: 'numeric',
       }).format(new Date());
 
+        // Get moon phase information
+      const phase = Moon.lunarPhase();
+      const phaseEmoji = Moon.lunarPhaseEmoji();
+
       console.log('\n============================================================');
       console.log(`City: ${cityName}`);
       console.log(`Country: ${cityCountry}`);
@@ -119,6 +125,7 @@ async function getWeatherData(latitude, longitude, units, cityCountry, targetTim
       console.log(`Temperature: ${temperature}°${units === 'imperial' ? 'F' : 'C'}`);
       console.log(`Sunrise (${cityName} Time): ${localSunriseTime}`);
       console.log(`Sunset (${cityName}): ${localSunsetTime}`);
+      console.log(`Moon Phase: ${phase} | ${phaseEmoji}`);
       console.log('============================================================\n');
     } else {
       throw new Error('OpenWeather API Error: ' + data.message);
@@ -144,8 +151,8 @@ async function main() {
   const city = await getUserInput('Enter the city name: ');
   const units = await getUserInput('Select units (metric (°C) /imperial (°F)): ');
 
-/// Hard-coded localTimeZone, but you can also fetch it dynamically
-const localTimeZone = 'America/Denver'; // Example for Mountain Time Zone
+// Dynamically fetch local time zone using Intl.DateTimeFormat
+const localTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 // Fetch the coordinates and time zones
 const { latitude, longitude, cityCountry, targetTimeZone } = await getCoordinates(city);
