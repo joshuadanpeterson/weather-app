@@ -34,7 +34,7 @@ const moonPhaseName = document.getElementById('moonPhaseName');  // New element 
 // Using lunarphase-js to get the lunar age percentage
 function getCurrentMoonPhase() {
     return Moon.lunarAgePercent();
-  }
+}
   
   // Map the moon phase to one of your 28 icons
   function getMoonIcon(phase) {
