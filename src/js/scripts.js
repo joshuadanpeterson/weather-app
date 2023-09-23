@@ -4,8 +4,9 @@ import { Moon } from "/node_modules/lunarphase-js/dist/index.es.js";
 // Openweathermap API. Do not share it publicly.
 const api = '827709658b8e55763f327d65c79711a2';
 
-// Set up Moon Phase Icons
+// Set up Moon Phase Icons and Image List
 let moonIcons = [];
+let imageList = {};
 
 // Fetch the moon icons from the JSON file
 fetch('../json/moonIcons.json')
@@ -17,6 +18,14 @@ fetch('../json/moonIcons.json')
     updateMoonIcon();   
   })
   .catch(error => console.error('Error loading moon icons:', error));
+
+// Fetch the image list from the JSON file
+fetch('../json/imageList.json')
+  .then(response => response.json())
+  .then(data => {
+    imageList = data;
+  })
+  .catch(error => console.error('Error loading image list:', error));
 
 // Initialize DOM elements for weather information display.
 const iconImg = document.getElementById('weather-icon'); // iconImg: Element to display the current weather icon.
@@ -82,6 +91,24 @@ window.addEventListener('load', () => {
             const place = data.name;
             const { description, icon } = data.weather[0];
             const { sunrise, sunset } = data.sys;
+
+            // Debug Logs
+            console.log('imageList:', imageList);
+            console.log('description:', description);
+
+            // This is for background image lookup & DOM update
+            // Find matching image source in imageList
+            const matchingImage = imageList.find(item => item.description === description);
+
+            if (matchingImage) {  
+                const imageFile = matchingImage.source;
+                document.body.style.backgroundImage = `url(${imageFile})`;
+            } else {
+                // If no matching image found, use default image
+                const defaultImage = 'media/imgs/alamanc.jpg'
+                document.body.style.backgroundImage = `url(${defaultImage})`;
+                console.error("Description not found in image list or image list is not populated");
+            }
 
             const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
             const fahrenheit = (temp * 9) / 5 + 32;

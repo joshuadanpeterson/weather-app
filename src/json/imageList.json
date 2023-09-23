@@ -1,0 +1,227 @@
+[
+    {
+      "description": "thunderstorm with light rain",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "thunderstorm with rain",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "thunderstorm with heavy rain",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "light thunderstorm",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "thunderstorm",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "heavy thunderstorm",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "ragged thunderstorm",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "thunderstorm with light drizzle",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "thunderstorm with drizzle",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "thunderstorm with heavy drizzle",
+      "source": "/media/imgs/storm.jpg"
+    },
+    {
+      "description": "light intensity drizzle",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "drizzle",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "heavy intensity drizzle",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "light intensity drizzle rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "drizzle rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "heavy intensity drizzle rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "shower rain and drizzle",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "heavy shower rain and drizzle",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "shower drizzle",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "light rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "moderate rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "heavy intensity rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "very heavy rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "extreme rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "freezing rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "light intensity shower rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "shower rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "heavy intensity shower rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "ragged shower rain",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "light snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "heavy snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "sleet",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "light shower sleet",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "shower sleet",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "light rain and snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "rain and snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "light shower snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "shower snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "heavy shower snow",
+      "source": "/media/imgs/snow.jpg"
+    },
+    {
+      "description": "mist",
+      "source": "/media/imgs/fog.jpg"
+    },
+    {
+      "description": "fog",
+      "source": "/media/imgs/fog.jpg"
+    },
+    {
+      "description": "haze",
+      "source": "/media/imgs/fog.jpg"
+    },
+    {
+      "description": "smoke",
+      "source": "/media/imgs/ash.jpg"
+    },
+    {
+      "description": "sand/dust whirls",
+      "source": "/media/imgs/ash.jpg"
+    },
+    {
+      "description": "sand",
+      "source": "/media/imgs/ash.jpg"
+    },
+    {
+      "description": "dust",
+      "source": "/media/imgs/ash.jpg"
+    },
+    {
+      "description": "volcanic ash",
+      "source": "/media/imgs/ash.jpg"
+    },
+    {
+      "description": "haze",
+      "source": "/media/imgs/dust.jpg"
+    },
+    {
+      "description": "squalls",
+      "source": "/media/imgs/rain.jpg"
+    },
+    {
+      "description": "tornado",
+      "source": "/media/imgs/tornado.jpg"
+    },
+    {
+      "description": "clear sky",
+      "source": "/media/imgs/sun.jpg"
+    },
+    {
+      "description": "few clouds: 11-25%",
+      "source": "/media/imgs/partly_cloudy.jpg"
+    },
+    {
+      "description": "scattered clouds: 25-50%",
+      "source": "/media/imgs/partly_cloudy.jpg"
+    },
+    {
+      "description": "broken clouds: 51-84%",
+      "source": "/media/imgs/partly_cloudy.jpg"
+    },
+    {
+      "description": "overcast clouds: 85-100%",
+      "source": "/media/imgs/cloudy.jpg"
+    }
+  ]
+  
