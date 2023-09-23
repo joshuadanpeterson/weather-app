@@ -1,2 +1,0 @@
-Set up OpenWeather API
-Set up Google Geocoding API & Google Time Zone API
