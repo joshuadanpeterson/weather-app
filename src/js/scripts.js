@@ -8,24 +8,26 @@ const api = '827709658b8e55763f327d65c79711a2';
 let moonIcons = [];
 let imageList = {};
 
-// Fetch the moon icons from the JSON file
-fetch('../json/moonIcons.json')
-  .then(response => response.json())
-  .then(data => {
-    moonIcons = data;
-    console.log("moonIcons:", moonIcons);
-    // Initialize moon icon
-    updateMoonIcon();   
-  })
-  .catch(error => console.error('Error loading moon icons:', error));
+// Fetch the moon icons and the image lists from the JSON files
+async function fetchData(url) {
+  const response = await fetch(url);
+  return await response.json();
+}
 
-// Fetch the image list from the JSON file
-fetch('../json/imageList.json')
-  .then(response => response.json())
-  .then(data => {
-    imageList = data;
-  })
-  .catch(error => console.error('Error loading image list:', error));
+async function initializeData() {
+  try {
+    [moonIcons, imageList] = await Promise.all([
+      fetchData('../json/moonIcons.json'),
+      fetchData('../json/imageList.json')
+    ]);
+    console.log("moonIcons:", moonIcons);
+    updateMoonIcon();
+  } catch (error) {
+    console.error('Error initializing data:', error);
+  }
+}
+
+initializeData();
 
 // Initialize DOM elements for weather information display.
 const iconImg = document.getElementById('weather-icon'); // iconImg: Element to display the current weather icon.
@@ -70,27 +72,19 @@ function updateMoonIcon() {
 }
 
 // Function to get weather data
-window.addEventListener('load', () => {
-    let long;
-    let lat;
-  // Accesing Geolocation of User
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-        // Storing Longitude and Latitude in variables
-        long = position.coords.longitude;
-        lat = position.coords.latitude;
-        const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
-
-        // Using fetch to get data
-        fetch(base)
-            .then((response) => {
-            return response.json();
-            })
-            .then((data) => {
-            const { temp } = data.main;
-            const place = data.name;
-            const { description, icon } = data.weather[0];
-            const { sunrise, sunset } = data.sys;
+window.addEventListener('load', async () => {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(async (position) => {
+      const { longitude: long, latitude: lat } = position.coords;
+      const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
+      
+      try {
+        const data = await fetchData(base);
+        // ... (The rest of the code where you update the DOM remains the same)
+        const { temp } = data.main;
+        const place = data.name;
+        const { description, icon } = data.weather[0];
+        const { sunrise, sunset } = data.sys;
 
             // Debug Logs
             console.log('imageList:', imageList);
@@ -125,7 +119,9 @@ window.addEventListener('load', () => {
             tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
             sunriseDOM.textContent = `${sunriseGMT.toLocaleDateString()}, ${sunriseGMT.toLocaleTimeString()}`;
             sunsetDOM.textContent = `${sunsetGMT.toLocaleDateString()}, ${sunsetGMT.toLocaleTimeString()}`;
-            });
+          } catch (error) {
+            console.error('Error fetching weather data:', error);
+          }
         });
-    }
-});
+      }
+    });
