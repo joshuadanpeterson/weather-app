@@ -208,19 +208,19 @@
       "source": "/media/imgs/sun.jpg"
     },
     {
-      "description": "few clouds: 11-25%",
+      "description": "few clouds",
       "source": "/media/imgs/partly_cloudy.jpg"
     },
     {
-      "description": "scattered clouds: 25-50%",
+      "description": "scattered clouds",
       "source": "/media/imgs/partly_cloudy.jpg"
     },
     {
-      "description": "broken clouds: 51-84%",
+      "description": "broken clouds",
       "source": "/media/imgs/partly_cloudy.jpg"
     },
     {
-      "description": "overcast clouds: 85-100%",
+      "description": "overcast clouds",
       "source": "/media/imgs/cloudy.jpg"
     }
   ]
