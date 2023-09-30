@@ -1,6 +1,6 @@
 # Weather App
 
-![Weather App Screenshot](/mockups/project_mockup_1.png)
+![Weather App Screenshot](mockups/project-image.png)
 
 ## Overview
 
