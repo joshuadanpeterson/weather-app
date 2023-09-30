@@ -125,5 +125,5 @@ window.addEventListener('load', async () => {
             console.error('Error fetching weather data:', error);
           }
         });
-      }
-    });
+    }
+});

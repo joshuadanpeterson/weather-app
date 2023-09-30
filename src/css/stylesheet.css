@@ -71,7 +71,7 @@ body {
     padding: 0.7em;
     background-color: transparent;
     border-bottom: 2px solid var(--transp-white-1);
-    color: var(--white);
+    color: var(--black);
     font-weight: 300;
 }
 .search-container input::placeholder {
