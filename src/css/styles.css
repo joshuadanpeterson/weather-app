@@ -17,8 +17,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.3);  /* Translucent white */   
+    background: rgba(255, 255, 255, 0.3);    
   }
+
 
   .weather {
     display: flex; 
