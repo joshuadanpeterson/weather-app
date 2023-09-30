@@ -114,7 +114,7 @@ If you have any questions or suggestions, feel free to contact us on Discord:
 
 ## Dependency Installation
 
-1. Open a terminal and navigate to the `tests` directory.
+1. Open a terminal and navigate to the project directory.
 2. Run `npm install` to install the required Node.js packages.
 
 ## Running the Node.js Test
