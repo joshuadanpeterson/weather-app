@@ -12,6 +12,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="stylesheet" href="/src/css/stylesheet.css" />
     
     <!-- Weather Icons-->
     <link rel="stylesheet" href="/src/css/weather-icons.css" />
@@ -24,6 +25,23 @@
 
 <body>
     <div class="container card">
+
+        <div class="wrapper">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="container-1">
+            <div class="search-container">
+                <input
+                    type="text"
+                    placeholder="Enter a city name"
+                    id="searchInput"
+                />
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+
         <img src="" alt="" srcset="" id="weather-icon">
         <div id="location">Unable to Fetch Weather</div>
         <div class="desc">No Information Available.</div>
@@ -47,6 +65,9 @@
 
     <!-- Custom JS -->
     <script type="module" src="../js/scripts.js"></script>
+
+    <script src="../js/key.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

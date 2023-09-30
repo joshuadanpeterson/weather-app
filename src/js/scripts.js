@@ -1,8 +1,10 @@
+
 // Importing the lunarphase-js library
 import { Moon } from "/node_modules/lunarphase-js/dist/index.es.js";
 
 // Openweathermap API. Do not share it publicly.
 const api = '827709658b8e55763f327d65c79711a2';
+
 
 // Set up Moon Phase Icons and Image List
 let moonIcons = [];
@@ -123,5 +125,5 @@ window.addEventListener('load', async () => {
             console.error('Error fetching weather data:', error);
           }
         });
-      }
-    });
+    }
+});
